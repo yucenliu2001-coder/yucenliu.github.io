@@ -1,0 +1,11 @@
+{
+  "id": "languages-greetings",
+  "name": "Languages",
+  "version": "1.0.0",
+  "license": "MIT",
+  "category": "content",
+  "tags": ["languages", "spoken-languages", "portfolio"],
+  "description": "Display spoken languages with greetings",
+  "author": "Yucen",
+  "keywords": ["hugo", "languages", "portfolio"]
+}

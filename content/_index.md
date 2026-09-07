@@ -16,12 +16,13 @@ sections:
       show_scroll_indicator: true
       typewriter:
         enable: true
-        prefix: "I build"
+        prefix: "I like"
         strings:
-          - "full-stack web apps"
-          - "scalable APIs"
-          - "beautiful UIs"
-          - "open source tools"
+          - "Computer graphics"
+          - "Learning languages"
+          - "Traveling"
+          - "Photography"
+          - "Sports"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -43,87 +44,48 @@ sections:
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
   
-  # Filterable Portfolio - Alpine.js powered project filtering
-  - block: portfolio
+  # Featured Project
+  - block: project-card
     id: projects
     content:
       title: "Featured Projects"
-      subtitle: "A selection of my recent work"
-      count: 0
-      filters:
-        folders:
-          - projects
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Full-Stack
-          tag: Full-Stack
-        - name: Frontend
-          tag: Frontend
-        - name: Backend
-          tag: Backend
-      default_button_index: 0
-      # Archive link auto-shown if more projects exist than 'count' above
-      # archive:
-      #   enable: false  # Set to false to explicitly hide
-      #   text: "Browse All"  # Customize text
-      #   link: "/work/"  # Custom URL
+      subtitle: "Some of my past work"
     design:
-      columns: 3
       background:
         color:
           light: "#ffffff"
           dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["4m", "0", "4m", "0"]
   
   # Visual Tech Stack - Icons organized by category
   - block: tech-stack
     id: skills
     content:
-      title: "Tech Stack"
-      subtitle: "Technologies I use to build things"
+      title: "Skills"
+      subtitle: "Something I can do"
       categories:
-        - name: Languages
+        - name: Programming
           items:
-            - name: TypeScript
-              icon: devicon/typescript
-            - name: JavaScript
-              icon: devicon/javascript
+            - name: C
+              icon: devicon/c
+            - name: C++
+              icon: devicon/cplusplus
             - name: Python
               icon: devicon/python
-            - name: Go
-              icon: devicon/go
-        - name: Frontend
+            - name: Java
+              icon: devicon/java
+        - name: Languages
           items:
-            - name: React
-              icon: devicon/react
-            - name: Next.js
-              icon: devicon/nextjs
-            - name: Tailwind CSS
-              icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
-        - name: Backend
-          items:
-            - name: Node.js
-              icon: devicon/nodejs
-            - name: Express
-              icon: devicon/express
-            - name: PostgreSQL
-              icon: devicon/postgresql
-            - name: Redis
-              icon: devicon/redis
-        - name: DevOps
-          items:
-            - name: Docker
-              icon: devicon/docker
-            - name: AWS
-              icon: devicon/amazonwebservices
-            - name: GitHub Actions
-              icon: brands/github
-            - name: Vercel
-              icon: devicon/vercel
+            - name: Chinese
+              greeting: "你好"
+            - name: English
+              greeting: "Hello"
+            - name: Spanish
+              greeting: "Hola"
+            - name: German
+              greeting: "Hallo"
+
     design:
       style: grid
       show_levels: false
@@ -133,12 +95,13 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
+
   
   # Experience Timeline
   - block: resume-experience
-    id: experience
+    id: education
     content:
-      title: Experience
+      title: Education
       date_format: Jan 2006
       items:
         - title: Senior Software Engineer
@@ -186,28 +149,16 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
   
-  # Recent Blog Posts
-  - block: collection
-    id: blog
-    content:
-      title: Recent Posts
-      subtitle: 'Thoughts on web development, tech, and more'
-      text: ''
-      filters:
-        folders:
-          - blog
-        exclude_featured: false
-      count: 3
-      order: desc
+  # Photography
+  - block: photo-gallery
+    id: photo-gallery
     design:
-      view: card
-      columns: 3
       background:
         color:
           light: "#f5f5f5"
           dark: "#08080c"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["2rem", "0", "2rem", "0"]
   
   # Contact Section
   - block: contact-info
@@ -217,8 +168,8 @@ sections:
       subtitle: "Let's build something amazing together"
       text: |-
         I'm always interested in hearing about new projects and opportunities.
-        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
+        Whether you're looking to collaborate, hagn out, or just want to play Geoguessr together, feel free to reach out!
+      email: yucenliu2001@gmail.com
       autolink: true
     design:
       columns: '1'
@@ -228,28 +179,4 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # CTA Card
-  - block: cta-card
-    content:
-      title: "Open to Opportunities"
-      text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
-        
-        Let's connect and discuss how I can help your team.
-      button:
-        text: 'Download Resume'
-        url: uploads/resume.pdf
-        new_tab: true
-    design:
-      card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
-        css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
-        text_color: dark
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "6rem", "0"]
 ---

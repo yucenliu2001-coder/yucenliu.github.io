@@ -50,6 +50,13 @@ markup:
   highlight:
     lineNos: false
 security:
-  _merge: deep
+  exec:
+    allow:
+      - "^go$"
+      - "^git$"
+      - "^node$"
+      - "^npx$"
+      - "^tailwindcss$"
+
 sitemap:
   _merge: deep

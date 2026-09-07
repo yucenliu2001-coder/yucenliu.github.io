@@ -2,17 +2,20 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Yu-Cen Liu
+  given: Yu-Cen
+  family: Liu
 postnominals: []
 status:
   icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
-role: Full-Stack Developer
-email: alex@example.com
+role: Master student in NYCU  
+email: yucenliu2001@gmail.com
 bio: |
-  Full-stack developer with 5+ years of experience building scalable web applications.
-  Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
+  I'm a student currently in NYCU CAIG lab. It's my pleasure to have you reading my portfolio. I have many hobbies, including studying 
+  about computer science, learning new languages, and meeting people from different backgrounds. I also like traveling and exploring 
+  various of cultures around the world in my own pace. Besides, I'm passionate about photography, where I record expeiences at different 
+  stages of life through my lenses. Last but not least, I'm a Geoguessr enthusiast (we can play together!). I hope we have the chance to 
+  work on some projects together in the future, or share some common hobbies.    
 
 affiliations:
   - name: Tech Corp
@@ -20,14 +23,14 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: mailto:alex@example.com
+    url: mailto:yucenliu2001@gmail.com
     label: E-mail Me
   - icon: brands/github
-    url: https://github.com/alexjohnson
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnson/
-  - icon: brands/x
-    url: https://x.com/alexjohnson
+    url: https://github.com/yucenliu2001-coder
+  - icon: brands/instagram
+    url: https://www.instagram.com/yucen_1026/
+  - icon: custom/geoguessr
+    url: https://www.geoguessr.com/user/683740eb3e6eacccf973802b
 
 interests:
   - Web Development
@@ -36,17 +39,22 @@ interests:
   - Developer Experience
 
 education:
-  - degree: B.S. Computer Science
-    institution: State University
-    start: 2015-09-01
-    end: 2019-05-31
-    summary: |
-      Focus on software engineering and distributed systems.
-      Senior project on distributed caching systems.
-    button:
-      text: View Project
-      url: https://github.com/alexjohnson/senior-project
-      icon: brands/github
+  - degree: Master 
+    institution: NYCU—CAIG Lab
+    start: Sep 2026
+    end: ??
+  - degree: Exchange Student
+    institution: TU Berlin—Engineering Science
+    start: Mar 2025
+    end: Sep 2025
+  - degree: Bachelor
+    institution: NTU—Engineering Science and Ocean Engineering
+    start: Sep 2020
+    end: Jan 2025
+  - degree: High School
+    institution: HSNU
+    start: Sep 2017
+    end: Jun 2020
 
 experience:
   - role: Senior Software Engineer
