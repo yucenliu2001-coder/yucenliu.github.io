@@ -144,14 +144,21 @@ jobs:
     - name: Verify generated assets
       run: |
         echo "Checking generated project image:"
-        ls -lh ./public/projects/text-to-sql/LLM.jpg || true
+        ls -lh ./public/projects/text-to-sql/LLM.jpg
 
         echo "Checking generated photo:"
-        ls -lh ./public/photos/photo01.jpg || true
+        ls -lh ./public/photos/photo01.jpg
 
-        echo "Checking photo directory:"
-        find ./public/photos -maxdepth 2 -type f | head -30
-        
+        echo "Checking total public directory size:"
+        du -sh ./public
+
+        echo "Checking important asset directories:"
+        du -sh ./public/photos
+        du -sh ./public/projects
+
+        echo "Checking all project/photo files:"
+        find ./public/photos ./public/projects -type f | sort
+
     - name: Upload artifact
       id: upload
       uses: actions/upload-pages-artifact@v4
