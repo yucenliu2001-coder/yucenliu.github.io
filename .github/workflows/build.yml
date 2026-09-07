@@ -159,6 +159,21 @@ jobs:
         echo "Checking all project/photo files:"
         find ./public/photos ./public/projects -type f | sort
 
+    - name: Check artifact contents
+      run: |
+        echo "Public root:"
+        ls -lah ./public
+
+        echo "Photos:"
+        ls -lah ./public/photos
+
+        echo "Project images:"
+        ls -lah ./public/projects/text-to-sql
+        ls -lah ./public/projects/ubike
+
+        echo "Searching for JPG files:"
+        find ./public -type f -iname "*.jpg" | wc -l
+
     - name: Upload artifact
       id: upload
       uses: actions/upload-pages-artifact@v4
