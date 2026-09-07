@@ -141,6 +141,17 @@ jobs:
           pnpm run pagefind || npx pagefind --site "public"
         fi
 
+    - name: Verify generated assets
+      run: |
+        echo "Checking generated project image:"
+        ls -lh ./public/projects/text-to-sql/LLM.jpg || true
+
+        echo "Checking generated photo:"
+        ls -lh ./public/photos/photo01.jpg || true
+
+        echo "Checking photo directory:"
+        find ./public/photos -maxdepth 2 -type f | head -30
+        
     - name: Upload artifact
       id: upload
       uses: actions/upload-pages-artifact@v4
